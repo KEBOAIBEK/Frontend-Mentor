@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    width: 656px;
+    border: 1px solid rgb(227, 221, 215);
+}
+
+@media  only screen and (max-width: 768px) {
+    hr{
+        width: 536px;
+    }
+}
+
+@media  only screen and (max-width: 375px) {
+    hr{
+        width: 311px;
+    }
+}
