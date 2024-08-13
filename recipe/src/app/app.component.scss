@@ -1,0 +1,282 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 48px 128px 48px;
+    background: rgb(243, 229, 215);
+}
+
+// Card
+.card{
+    width: 736px;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+}
+
+.card-img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    background: url('./../assets/img/img.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+// Tittle
+.text-content__title h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 24px 0;
+    color: rgb(49, 46, 44);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.text-content__title p{
+    width: 656px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:  0 0 24px 0px;
+}
+
+// Preaparition
+.preparation{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: rgb(243, 229, 215);
+}
+
+.preparation h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-style: 20px;
+    color: rgb(122, 40, 78);
+    border-radius: 12px;
+}
+
+.preparation ul{
+    padding: 0px 0px 0px 16px;
+    list-style-type: disc; 
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 0px 8px; 
+    color: rgb(95, 86, 77);
+}
+  
+.preparation li {
+    margin-bottom: 8px; 
+}
+  
+.preparation li::marker {
+    font-size: 12px; 
+    background: rgb(122, 40, 78);
+}
+
+// Ingredients
+.ingredients{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 24px 0px;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(133, 70, 50);
+}
+
+.ingredients ul{
+    padding: 0px 0px 0px 16px;
+    list-style-type: disc; 
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 0px 8px; 
+    color: rgb(95, 86, 77);
+}
+  
+.ingredients li {
+    margin-bottom: 8px; 
+}
+  
+.ingredients li::marker {
+    font-size: 12px; 
+    background: rgb(133, 70, 50);
+}
+
+// Instructions
+.instructions{
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions h3{
+    height: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(133, 70, 50);
+}
+
+.instructions ul{
+    padding: 0px 0px 0px 16px;
+    list-style-type: numeric;
+    font-size: 16px; 
+    line-height: 1.5;
+    margin: 0px 8px; 
+    color: rgb(95, 86, 77);
+}
+
+.instructions li {
+    margin-bottom: 8px;
+}
+  
+.instructions li::marker {
+    padding: 0px 16px 0px 0px;
+    font-size: 12px; 
+    color: rgb(133, 70, 50);
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+// Nutrition
+.nutritions{
+    display: flex;
+    flex-direction: column;
+}
+
+.nutritions h3{
+    height: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 24px;
+    color: rgb(133, 70, 50);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.nutritions p{
+    font-size: 16px;
+    color: rgb(95, 86, 77);
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+
+.nutritions .label{
+    float: left;
+    width: 50%;
+    color: rgb(95, 86, 77);
+    font-size: 16px;
+    padding: 0px 32px 0px 32px;
+    margin: 12px 0;
+}
+
+.nutritions .value{
+    float: right;
+    width: 50%;
+    color: rgb(133, 70, 50);
+    font-size: 16px;
+    padding: 0px 32px 0px 32px;
+    margin: 12px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 768px;
+        height: 2100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 128px 48px 128px 48px;
+    }
+
+
+    .card{
+        width: 616px;
+        height: 1884px;
+    }
+
+    .card-img{
+        width: 536px;
+        height: 300px;
+    }
+
+    .text-content__title p{
+        width: 536px;
+    }
+}
+
+@media  only screen and (max-width: 375px) {
+    .container{
+        max-width: 375px;
+        height: 100%;
+        background: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card{
+        max-width: 375px;
+        height: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card-img{
+        width: 375px;
+        height: 171px;
+        border-radius: 0;
+    }
+
+    .text-content{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 32px 40px 32px;
+    }
+
+    .text-content__title p{
+        width: 311px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+        margin: 24px 0px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
